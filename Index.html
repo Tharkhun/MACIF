@@ -9,33 +9,88 @@
         
     </head>
     <style>
+        
         body{
             text-align: center;
             font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
         }
-        .intro{width: 640px; margin-left: auto; margin-right: auto
+        .intro{
+            width: 640px; 
+            margin-left: auto; 
+            margin-right: auto;
+            background: url(Main.jpg);
+            background-size: cover;
+            height: 100%;
+            overflow: hidden;
+            color: white
         }
         .intro p{text-align: left}
+        .header{
+            padding: 20px;
+            background: rgba(39,62,90,0.87);
+            overflow: hidden;
+            height: 100%;
+            z-index: 2;
+        }
+        .video{
+            background: rgba(39,62,90,0.87);
+            width:640px; 
+            padding-top: 40px;
+            margin-left: auto; 
+            margin-right: auto; 
+            padding-bottom: 50px
+        }
+        .separateur{
+            width:440px;
+            height:2px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top:40px;
+            background-color: dimgray
+        }
+        .signature{
+            width:640px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: right;
+            padding-top: 50px;
+            color:black;
+            padding-right: 10px;
+            font-family: "Comic Sans MS", cursive, sans-serif
+        }
+    
     </style>
     <body>
         
         <div class="intro">
+            <div class="header">
+            <img src="LOGO_SD_BasseDef.png" width="70px"/>
             <h1>QUIZZ Studio Digital MACIF</h1>
 
             <p>Parce qu'il n'est pas interdit d'apprendre en s'amusant et de s'amuser en apprenant, le studio digital vous propose un petit Quizz afin d'en savoir plus sur le digital... </p><p>Attachez vos ceintures, c'est parti !</p>
+            </div>
         </div>
         
+<!-- QUIZZ PLAYBUZZ-->        
         <script>(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(d.getElementById(id))return;js=d.createElement(s);js.id=id;js.src='https://embed.playbuzz.com/sdk.js';fjs.parentNode.insertBefore(js,fjs);}(document,'script','playbuzz-sdk'));</script>
+                
+        <div class="playbuzz" data-id="14686948-cdbe-43c3-a042-2374bf76461e" data-show-share="false" data-show-info="false"></div>
+<!-- FIN QUIZZ PLAYBUZZ-->  
         
-<div class="playbuzz" data-id="14686948-cdbe-43c3-a042-2374bf76461e" data-show-share="false" data-show-info="false"></div>
-
-        <div class="intro">
+        <div class="separateur"></div>
+        <div class="intro" style="margin-top: 60px;">
+            <div class="header">
             <h1>Envie d'en savoir plus ?</h1>
         
             <p>Mais au fait, comment est-ce que les machines apprennent ? Dans cette vidéo découvrez comment on entraire un IA... et pourquoi personne ne sait exactement comment elle fonctionne...</p>
-            
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/R9OHn5ZF4Uo?hl=Fr&cc_load_policy=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            
+        </div>
+        </div>
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/R9OHn5ZF4Uo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+        </div>
+        <div class="signature">
+        <img src="LOGO_SD_BasseDef.png" width="40px" style="margin-right: 50px;">
+            <br>L'équipe du studio digital
         </div>
         
     </body>
